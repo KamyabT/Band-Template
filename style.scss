@@ -1,0 +1,346 @@
+$primaryBgColor: #000;
+$secondaryBgColor: #ccc;
+$thirdBgColor:#ffff;
+$fourthBgColor : #f1f1f1;
+
+
+
+$primaryTxtColor: #fff;
+$secondaryTxtColor: #000;
+$thirdTxtColor: #757575;
+
+
+$firstFontFamily: "Segoe UI",Arial,sans-serif;
+$secondaryFontFamily: "Lato", sans-serif;
+
+
+
+$fontWeight : (
+    "light": 400,
+    "regular": 500,
+    "semibold": 700,
+    "bold": 900,
+
+);
+
+
+/***********************All*********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/***********************Design*********************/
+
+.navbarDsign {
+    background-color: $primaryBgColor;
+    position: static;
+    .firstInnerDivDesign {
+
+        .menuMainDesign {
+            display: flex;
+            list-style: none;
+            color: $primaryTxtColor;
+            li {
+                padding: 12px 24px;
+            }
+            li:hover {
+                background-color: $secondaryBgColor;
+                color: $secondaryTxtColor;
+            }
+            .dropDown {
+                position: relative;
+                .dropdown-content {
+                    display: none;
+                    .dropDownItems {
+                        list-style: none;
+                    }
+                }
+            }
+            .dropDown:hover {
+                position: relative;
+                .dropdown-content {
+                    display: block;
+                    position: absolute;
+                    top: 43px;
+                    background-color: $fourthBgColor;
+                    left: 0px;
+                    .dropDownItems {
+
+                        a {
+                            color:$secondaryTxtColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainSectionDesgin {
+    
+    .sliderPictureSection {
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .bandIntroSection {
+        padding: 50px 0;
+        h2 {
+            font-family: $firstFontFamily;
+            font-weight: map-get($fontWeight, "light" );
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 4px;
+            margin: 10px 0;
+        }
+        p.bandDescriptionTitle {
+            text-align: center;
+            font-style: italic;
+            margin: 15px 0;
+            opacity: 0.6;
+        }
+        p.bandDescription {
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .membersSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 35px 0;
+            .eachMemberProfile {
+                text-align: center;
+                p {
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .calenderAndArticlesDesign {
+        background-color: $primaryBgColor;
+        padding: 100px 0;
+        h2 {
+            font-family: $firstFontFamily;
+            font-weight: map-get($fontWeight, "light" );
+            font-size: 30px;
+            color: $primaryTxtColor;
+            text-align: center;
+            letter-spacing: 4px;
+            line-height: 45px;
+            margin: 15px 0;
+        }
+        p.months {
+            font-style: italic;
+            opacity: 0.6;
+            color: $primaryTxtColor;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .reservationDatesList {
+            margin-top: 50px;
+            background-color: $thirdBgColor;
+            list-style: none;
+            li {
+                padding: 10px 25px;
+                color: $thirdTxtColor;
+            }
+            li:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        .reservationLocationsArticle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .eachLocation {
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                .innerReservationLocationContent {
+                    background-color: $thirdBgColor;
+                    padding: 10px 15px;
+                    p {
+                        color: $secondaryTxtColor;
+                    }
+                    P:first-child {
+                        font-weight: map-get($fontWeight, "bold" );
+                        font-family: $secondaryFontFamily;
+                        font-size: 16px;
+                        margin: 15px 0;
+                    }
+                    p:nth-child(2) {
+                        opacity: 0.6;
+                        font-family: $secondaryFontFamily;
+                        margin: 15px 0;
+                    }
+                    p:nth-child(3) {
+                        margin: 15px 0;
+                    }
+                    button {
+                        background-color: $primaryBgColor;
+                        color: $primaryTxtColor;
+                        padding: 10px 15px ;
+                        margin: 0 0 15px 0;
+                        font-size: 14px;
+                        font-weight: map-get($fontWeight, "regular" );
+                        border-width:5px;  
+                        border-style:none;
+                    }
+                }
+            }
+            .eachLocation:first-child {
+                padding-top: 25px;
+                padding-right: 15px;
+            }
+            .eachLocation:nth-child(2) {
+                padding: 25px 15px 0px 15px;
+            }
+            .eachLocation:last-child {
+                padding-top: 25px;
+                padding-left: 15px;
+            }
+        }
+    }
+    .contactSectionDesign {
+        padding: 100px 0;
+        .contactSectionContent {
+            
+            h2 {
+                font-family: $firstFontFamily;
+                font-weight: map-get($fontWeight , "light" );
+                font-size: 35px;
+                letter-spacing: 4px;
+                margin: 15px 0;
+                text-align: center;
+            }
+            p.sloganParagraph {
+                font-family: $firstFontFamily;
+                font-weight: map-get($fontWeight , "light" );
+                font-style: italic;
+                opacity: 0.6;
+                text-align: center;
+                margin: 15px 0;
+            }
+            .contactSectionItems {
+                display: flex;
+                justify-content: space-between;
+                margin: 25px;
+                .contactSectionTextDesign {
+                    display: flex;
+                    flex-direction: column;
+                    .eachTextSection {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 5px 0 ;
+                        i {
+                            font-size: 20px;
+                            margin-right: 10px;
+                            width: 20px;
+                        }
+                        p {
+                            font-style: normal;
+                            color: $secondaryTxtColor;
+                            text-align: center;
+                        }
+                    }
+                }
+                .contactSectionFormDesign {
+                    max-width: 50%;
+                    .innerFormTwoFields {
+                        display: block;
+                        .nameTextArea {
+                            float: left;
+                            width: calc(50% - 5px);
+                            margin-bottom: 5px;
+                            margin-right: 2.5px;
+                            padding: 10px 10px;
+                            border: 1px solid $secondaryBgColor;
+                        }
+                        .emailArea {
+                            width: calc(50% - 5px);
+                            float: right;
+                            margin-bottom: 5px;
+                            margin-left: 2.5px;
+                            padding: 10px 10px;
+                            border: 1px solid $secondaryBgColor;
+                        }
+                        .messageTextArea {
+                            width: 100%;
+                            margin-bottom: 5px;
+                            padding: 10px 10px;
+                            border: 1px solid $secondaryBgColor;
+                        }
+                    }
+                    .submitButton {
+                        margin-top: 15px;
+                        float: right;
+                        padding: 10px 15px;
+                        background-color: $primaryBgColor;
+                        color: $primaryTxtColor;
+                        border-width: 1px;
+                        border-style: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .mapSectionDesign {
+
+        img {
+            width: 100%;
+            filter: grayscale(50%);
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}
+.footerSectionDesign {
+    padding: 100px 0;
+    text-align: center;
+    background-color: $fourthBgColor;
+    .footerSocialIconsDesign {
+        
+        i {
+            padding: 2px;
+            font-size: 30px;
+            color: $thirdTxtColor;
+        }
+        i:hover {
+            color: $secondaryBgColor;
+        }
+        p {
+            color: $thirdTxtColor;
+            margin-top: 15px;
+        }
+    }
+}

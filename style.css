@@ -1,0 +1,376 @@
+/***********************All*********************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***********************Design*********************/
+.navbarDsign {
+  background-color: #000;
+  position: static;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: #fff;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign li {
+  padding: 12px 24px;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign li:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown {
+  position: relative;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content {
+  display: none;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content .dropDownItems {
+  list-style: none;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover {
+  position: relative;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  top: 43px;
+  background-color: #f1f1f1;
+  left: 0px;
+}
+
+.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content .dropDownItems a {
+  color: #000;
+}
+
+.mainSectionDesgin .sliderPictureSection img {
+  width: 100%;
+  height: auto;
+}
+
+.mainSectionDesgin .bandIntroSection {
+  padding: 50px 0;
+}
+
+.mainSectionDesgin .bandIntroSection h2 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+.mainSectionDesgin .bandIntroSection p.bandDescriptionTitle {
+  text-align: center;
+  font-style: italic;
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.mainSectionDesgin .bandIntroSection p.bandDescription {
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .bandIntroSection .membersSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 35px 0;
+}
+
+.mainSectionDesgin .bandIntroSection .membersSection .eachMemberProfile {
+  text-align: center;
+}
+
+.mainSectionDesgin .bandIntroSection .membersSection .eachMemberProfile p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mainSectionDesgin .bandIntroSection .membersSection .eachMemberProfile img {
+  width: 60%;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign {
+  background-color: #000;
+  padding: 100px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign h2 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 45px;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign p.months {
+  font-style: italic;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationDatesList {
+  margin-top: 50px;
+  background-color: #ffff;
+  list-style: none;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationDatesList li {
+  padding: 10px 25px;
+  color: #757575;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationDatesList li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation img {
+  width: 100%;
+  display: block;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent {
+  background-color: #ffff;
+  padding: 10px 15px;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent p {
+  color: #000;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent P:first-child {
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent p:nth-child(2) {
+  opacity: 0.6;
+  font-family: "Lato", sans-serif;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent p:nth-child(3) {
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation .innerReservationLocationContent button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  border-width: 5px;
+  border-style: none;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:first-child {
+  padding-top: 25px;
+  padding-right: 15px;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:nth-child(2) {
+  padding: 25px 15px 0px 15px;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:last-child {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.mainSectionDesgin .contactSectionDesign {
+  padding: 100px 0;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent h2 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 4px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent p.sloganParagraph {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.6;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionTextDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionTextDesign .eachTextSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 5px 0;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionTextDesign .eachTextSection i {
+  font-size: 20px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionTextDesign .eachTextSection p {
+  font-style: normal;
+  color: #000;
+  text-align: center;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign {
+  max-width: 50%;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign .innerFormTwoFields {
+  display: block;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign .innerFormTwoFields .nameTextArea {
+  float: left;
+  width: calc(50% - 5px);
+  margin-bottom: 5px;
+  margin-right: 2.5px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign .innerFormTwoFields .emailArea {
+  width: calc(50% - 5px);
+  float: right;
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign .innerFormTwoFields .messageTextArea {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.mainSectionDesgin .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign .submitButton {
+  margin-top: 15px;
+  float: right;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border-width: 1px;
+  border-style: none;
+  font-size: 14px;
+}
+
+.mainSectionDesgin .mapSectionDesign img {
+  width: 100%;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  height: auto;
+  vertical-align: middle;
+}
+
+.footerSectionDesign {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.footerSectionDesign .footerSocialIconsDesign i {
+  padding: 2px;
+  font-size: 30px;
+  color: #757575;
+}
+
+.footerSectionDesign .footerSocialIconsDesign i:hover {
+  color: #ccc;
+}
+
+.footerSectionDesign .footerSocialIconsDesign p {
+  color: #757575;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=style.css.map */
