@@ -1,0 +1,111 @@
+/***********************All*********************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  .container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 650px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/***********************Design*********************/
+@media (max-width: 500px) {
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign {
+    background-color: #000;
+  }
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign i {
+    display: block;
+    color: #f1f1f1;
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign .menuMainDesign {
+    display: none;
+  }
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign .menuMainDesign.open {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign .menuMainDesign.open li {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+  }
+  body header.headerDesign nav.navbarDesign .firstInnerDivDesign .menuMainDesign.open li:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  body .calenderAndArticlesDesign .calenderAndArticlesContent .reservationLocationsArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .calenderAndArticlesDesign .calenderAndArticlesContent .reservationLocationsArticle .eachLocation {
+    padding: 25px 15px 25px 15px;
+  }
+  body .contactSectionDesign .contactSectionContent .contactSectionItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionTextDesign {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .contactSectionDesign .contactSectionContent .contactSectionItems .contactSectionFormDesign {
+    margin-top: 25px;
+    max-width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style-responsive.css.map */

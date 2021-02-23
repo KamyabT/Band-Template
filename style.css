@@ -20,12 +20,16 @@ a {
 }
 
 /***********************Design*********************/
-.navbarDsign {
+.navbarDesign {
   background-color: #000;
   position: static;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign {
+.navbarDesign .firstInnerDivDesign i {
+  display: none;
+}
+
+.navbarDesign .firstInnerDivDesign .menuMainDesign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,32 +37,32 @@ a {
   color: #fff;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign li {
+.navbarDesign .firstInnerDivDesign .menuMainDesign li {
   padding: 12px 24px;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign li:hover {
+.navbarDesign .firstInnerDivDesign .menuMainDesign li:hover {
   background-color: #ccc;
   color: #000;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown {
   position: relative;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content {
   display: none;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content .dropDownItems {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown .dropdown-content .dropDownItems {
   list-style: none;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown:hover {
   position: relative;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content {
   display: block;
   position: absolute;
   top: 43px;
@@ -66,7 +70,7 @@ a {
   left: 0px;
 }
 
-.navbarDsign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content .dropDownItems a {
+.navbarDesign .firstInnerDivDesign .menuMainDesign .dropDown:hover .dropdown-content .dropDownItems a {
   color: #000;
 }
 
@@ -176,6 +180,11 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 0 -15px;
+}
+
+.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation {
+  padding: 25px 15px;
 }
 
 .mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation img {
@@ -218,20 +227,6 @@ a {
   font-weight: 500;
   border-width: 5px;
   border-style: none;
-}
-
-.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:first-child {
-  padding-top: 25px;
-  padding-right: 15px;
-}
-
-.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:nth-child(2) {
-  padding: 25px 15px 0px 15px;
-}
-
-.mainSectionDesgin .calenderAndArticlesDesign .reservationLocationsArticle .eachLocation:last-child {
-  padding-top: 25px;
-  padding-left: 15px;
 }
 
 .mainSectionDesgin .contactSectionDesign {

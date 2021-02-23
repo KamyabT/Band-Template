@@ -1,0 +1,151 @@
+$primaryBgColor: #000;
+$secondaryBgColor: #ccc;
+$thirdBgColor:#ffff;
+$fourthBgColor : #f1f1f1;
+
+
+
+$primaryTxtColor: #fff;
+$secondaryTxtColor: #000;
+$thirdTxtColor: #757575;
+
+
+$firstFontFamily: "Segoe UI",Arial,sans-serif;
+$secondaryFontFamily: "Lato", sans-serif;
+
+
+
+$fontWeight : (
+    "light": 400,
+    "regular": 500,
+    "semibold": 700,
+    "bold": 900,
+
+);
+
+
+/***********************All*********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 300px){
+    .container {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 375px) {
+    .container {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 650px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 900px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/***********************Design*********************/
+
+@media (max-width: 500px) {
+    body {
+
+        header.headerDesign {
+
+            nav.navbarDesign {
+
+                .firstInnerDivDesign {
+                    background-color: $primaryBgColor;
+                    i {
+                        display: block;
+                        color: $fourthBgColor;
+                        padding: 10px 10px;
+                        font-size: 20px;
+                    }
+                    .menuMainDesign {
+                        display: none;
+                        &.open {
+                            display: block;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            li {
+                                border-top: 1px solid $secondaryBgColor;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            li:last-child {
+                                border-bottom: 1px solid $secondaryBgColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main.mainSectionDesgin {
+
+            .sliderPictureSection {
+
+            }
+            .bandIntroSection {
+                
+            }
+        }
+        .calenderAndArticlesDesign {
+         
+            .calenderAndArticlesContent {
+
+                .reservationLocationsArticle {
+                    display: flex;
+                    flex-direction: column;
+                    .eachLocation {
+                        padding: 25px 15px 25px 15px;
+                    }
+                }
+            }
+        }
+        .contactSectionDesign {
+         
+            .contactSectionContent {
+
+                .contactSectionItems {
+                    display: flex;
+                    flex-direction: column;
+                    .contactSectionTextDesign {
+                        align-items: center;
+                    }
+                    .contactSectionFormDesign {
+                        margin-top: 25px;
+                        max-width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
